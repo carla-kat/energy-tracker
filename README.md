@@ -10,10 +10,13 @@ El proyecto empezó como un ejercicio básico y ha evolucionado a una herramient
 
 - ➕ Añadir registro diario (energía, ánimo, sueño y notas)
 - 📜 Ver historial completo de registros
-- 📈 Calcular medias de los últimos días
-- 📊 Resumen semanal con comparación de tendencias
+- 📈 Calcular medias de los últimos 7 días
+- 📊 Estadísticas de energía, ánimo y sueño
+- 📅 Identificar el mejor y peor día de energía, ánimo y sueño
+- 📈 Análisis de tendencias semanales
 - 🏆 Mostrar automáticamente el último registro en el menú
 - 🔄 Sobrescritura automática si ya existe un registro del mismo día
+- ✅ Validación de entradas (0–10)
 
 ---
 
@@ -44,8 +47,10 @@ Ejemplo de datos registrados:
 - Los datos se guardan en un archivo JSON local.
 - La app permite visualizar:
    - Historial completo
-   -  Promedios de los últimos días
-   - Resumen semanal con evolución
+   - Promedios de los últimos 7 días
+   - Estadísticas de máximos y mínimos
+   - Identificación de mejores y peores días
+   - Análisis de tendencias semanales
 
 ---
 
@@ -63,5 +68,7 @@ Ejemplo de datos registrados:
 1. ➕ Añadir entrada diaria
 2. 📜 Ver historial
 3. 📈 Resumen semanal
+4. 📊 Estadísticas
+5. 📈 Tendencias
 0. 🚪 Salir
 ```
