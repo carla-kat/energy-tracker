@@ -5,5 +5,12 @@
         "mood": 5,
         "sleep": 3,
         "notes": "He dormido mal"
+    },
+    {
+        "date": "2026-06-20",
+        "energy": 7,
+        "mood": 7,
+        "sleep": 6,
+        "notes": "He dormido regular"
     }
 ]
