@@ -12,5 +12,12 @@
         "mood": 7,
         "sleep": 6,
         "notes": "He dormido regular"
+    },
+    {
+        "date": "2026-06-21",
+        "energy": 8,
+        "mood": 8,
+        "sleep": 7,
+        "notes": "Hoy me siento con m\u00e1s fuerza"
     }
 ]

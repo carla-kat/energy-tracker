@@ -38,23 +38,6 @@ def show_history():
      print(f"   📝 Notas: {d['notes']}")
      print("-" * 30)    
        
-
-def show_average():
-    data = get_last_days(7)
-
-    if not data:
-        print("No hay datos")
-        return
-
-    energy = sum(d["energy"] for d in data) / len(data)
-    mood = sum(d["mood"] for d in data) / len(data)
-    sleep = sum(d["sleep"] for d in data) / len(data)
-
-    print(f"Media energía: {energy:.1f}")
-    print(f"Media ánimo: {mood:.1f}")
-    print(f"Media sueño: {sleep:.1f}")
-
-
 def show_week_summary():
     data = get_last_days(14)
 
@@ -83,20 +66,6 @@ def show_week_summary():
             trend = "📉 bajando"
 
         print(f"{emoji} {field}: {curr:.1f} ({trend})")
-
-
-def ask_score(text):
-    while True:
-        try:
-            value = int(input(text))
-
-            if 0 <= value <= 10:
-                return value
-
-            print("Introduce un número entre 0 y 10.")
-
-        except ValueError:
-            print("Eso no es un número.")
 
 def get_score(text):
     while True:
